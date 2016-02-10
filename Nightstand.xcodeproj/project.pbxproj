@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		51FA97651C6AC7A6007205BD /* Nightstand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightstand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA97681C6AC7A6007205BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51FA976A1C6AC7A6007205BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51FA976A1C6AC7A6007205BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		51FA976D1C6AC7A6007205BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51FA976F1C6AC7A6007205BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51FA97721C6AC7A6007205BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					51FA97641C6AC7A6007205BD = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7YEY64R54C;
 					};
 					51FA97781C6AC7A6007205BD = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -399,10 +400,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Nightstand/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COMSC3133.Nightstand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +414,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Nightstand/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COMSC3133.Nightstand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +491,7 @@
 				51FA978F1C6AC7A6007205BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51FA97901C6AC7A6007205BD /* Build configuration list for PBXNativeTarget "NightstandTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +500,7 @@
 				51FA97921C6AC7A6007205BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51FA97931C6AC7A6007205BD /* Build configuration list for PBXNativeTarget "NightstandUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +509,7 @@
 				51FA97951C6AC7A6007205BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
