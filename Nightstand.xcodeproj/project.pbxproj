@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51029AA61C726D37009A3F89 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51029AA51C726D37009A3F89 /* SettingsViewController.swift */; };
 		51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA97681C6AC7A6007205BD /* AppDelegate.swift */; };
 		51FA976B1C6AC7A6007205BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA976A1C6AC7A6007205BD /* ViewController.swift */; };
 		51FA976E1C6AC7A6007205BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FA976C1C6AC7A6007205BD /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51029AA51C726D37009A3F89 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 		51FA97651C6AC7A6007205BD /* Nightstand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightstand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA97681C6AC7A6007205BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51FA976A1C6AC7A6007205BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				51FA97681C6AC7A6007205BD /* AppDelegate.swift */,
+				51029AA51C726D37009A3F89 /* SettingsViewController.swift */,
 				51FA976A1C6AC7A6007205BD /* ViewController.swift */,
 				51FA976C1C6AC7A6007205BD /* Main.storyboard */,
 				51FA976F1C6AC7A6007205BD /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 			files = (
 				51FA976B1C6AC7A6007205BD /* ViewController.swift in Sources */,
 				51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */,
+				51029AA61C726D37009A3F89 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

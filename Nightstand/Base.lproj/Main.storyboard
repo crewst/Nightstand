@@ -18,15 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:09" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wne-iy-cOG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:09" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wne-iy-cOG">
                                 <rect key="frame" x="20" y="228.5" width="560" height="143.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="120"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOC-Jp-m78">
+                                <rect key="frame" x="32" y="554" width="22" height="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="6Tg-2J-nFe" kind="popoverPresentation" popoverAnchorView="sOC-Jp-m78" id="So3-ON-xAx">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sOC-Jp-m78" secondAttribute="bottom" constant="24" id="MA2-uS-b8Y"/>
+                            <constraint firstItem="sOC-Jp-m78" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Nal-q4-fVH"/>
                             <constraint firstItem="Wne-iy-cOG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QS7-pO-EzR"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Wne-iy-cOG" secondAttribute="leading" id="ZHH-Zs-oht"/>
                             <constraint firstItem="Wne-iy-cOG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="apN-iG-13n"/>
@@ -35,11 +46,30 @@
                     </view>
                     <connections>
                         <outlet property="ClockLabel" destination="Wne-iy-cOG" id="w7z-rU-ghH"/>
+                        <outlet property="SettingsButton" destination="sOC-Jp-m78" id="91u-XE-gqs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="355" y="462"/>
+            <point key="canvasLocation" x="394" y="464"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="fOO-UR-G92">
+            <objects>
+                <viewController id="6Tg-2J-nFe" customClass="SettingsViewController" customModule="Nightstand" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rM7-c2-jKM"/>
+                        <viewControllerLayoutGuide type="bottom" id="mAr-Hw-TXR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsW-XA-MPP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsI-CR-f5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="464"/>
         </scene>
     </scenes>
 </document>
