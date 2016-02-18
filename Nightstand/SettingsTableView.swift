@@ -10,7 +10,29 @@ import UIKit
 
 class SettingsTableView: UITableViewController {
 
+    @IBOutlet weak var BrightnessSlider: UISlider!
+    @IBOutlet weak var ThemeChanger: UISegmentedControl!
+    @IBOutlet weak var CloseButton: UIBarButtonItem!
+    
+    var CurrentVC: ViewController!
+    
+    
+    @IBAction func closeSettings(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    @IBAction func BrightnessChanged(sender: UISlider) {
+        UIScreen.mainScreen().brightness = CGFloat(sender.value)
+    }
+    
+    @IBAction func ThemeChanged(sender: UISegmentedControl!) {
+        
+    }
+    
     override func viewDidLoad() {
+        
+        
+        
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -19,23 +41,21 @@ class SettingsTableView: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    //override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+    //    return 0
+    //}
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    //override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+    //    return 0
+    //}
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

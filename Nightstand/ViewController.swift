@@ -9,20 +9,24 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+public class ViewController: UIViewController {
 	
 	
-    @IBOutlet weak var ClockLabel: UILabel!
+    @IBOutlet public var ClockLabel: UILabel!
 	@IBOutlet weak var SettingsButton: UIButton!
-	
 	
 	var timer = NSTimer()
 	var dateFormatter = NSDateFormatter()
 	
 
 	
-	override func viewDidLoad() {
+	override public func viewDidLoad() {
+		
+		
+		
 		super.viewDidLoad()
+		
+		let sec = SettingsTableView(); sec.CurrentVC = self
 		
 				dateFormatter.timeStyle = .ShortStyle
 		
