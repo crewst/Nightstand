@@ -18,15 +18,25 @@ public class ViewController: UIViewController {
 	var timer = NSTimer()
 	var dateFormatter = NSDateFormatter()
 	
+	var sec = SettingsTableView()
+	
+	let defaultSettings = NSUserDefaults.standardUserDefaults()
+	let firstLaunch = NSUserDefaults.standardUserDefaults().boolForKey("IsFirstLaunch")
 
+	
 	
 	override public func viewDidLoad() {
 		
+		if firstLaunch {
+			defaultSettings.setBool(false, forKey: "LightTheme")
+			defaultSettings.setFloat(0.0, forKey: "Brightness")
+		}
 		
+		
+		defaultSettings.setBool(false, forKey: "lightMode")
 		
 		super.viewDidLoad()
 		
-		let sec = SettingsTableView(); sec.CurrentVC = self
 		
 				dateFormatter.timeStyle = .ShortStyle
 		
@@ -45,6 +55,19 @@ public class ViewController: UIViewController {
 	}
 	
 	@objc func tick() {
+		
+		if defaultSettings.boolForKey("LightTheme") {
+			ClockLabel.textColor = UIColor.blackColor()
+			SettingsButton.tintColor = UIColor.blackColor()
+			self.view.backgroundColor = UIColor.whiteColor()
+		}
+		if defaultSettings.boolForKey("LightTheme") == false {
+			ClockLabel.textColor = UIColor.whiteColor()
+			SettingsButton.tintColor = UIColor.whiteColor()
+			self.view.backgroundColor = UIColor.blackColor()
+		}
+		ClockLabel.textColor = UIColor.whiteColor()
+				
 		ClockLabel.text = NSDateFormatter.localizedStringFromDate(NSDate(),
 			dateStyle: .NoStyle,
 			timeStyle: .ShortStyle)
