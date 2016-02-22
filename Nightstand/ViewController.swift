@@ -49,7 +49,6 @@ public class ViewController: UIViewController {
 		
 		super.viewDidLoad()
 		
-		
 		dateFormatter.timeStyle = .ShortStyle // Defines time display
 		
 		let timeString = "\(dateFormatter.stringFromDate(NSDate()))"
