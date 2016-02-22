@@ -11,6 +11,7 @@ import UIKit
 
 public class ViewController: UIViewController {
 	
+	//GLOBAL VARIABLES
 	
     @IBOutlet public var ClockLabel: UILabel!
 	@IBOutlet weak var SettingsButton: UIButton!
@@ -23,30 +24,38 @@ public class ViewController: UIViewController {
 	let defaultSettings = NSUserDefaults.standardUserDefaults()
 	let firstLaunch = NSUserDefaults.standardUserDefaults().boolForKey("IsFirstLaunch")
 
+	////////////////////////////////////////
+	////////////////////////////////////////
 	
 	
-	override public func viewDidLoad() {
+	override public func viewDidLoad() { // Triggered when app loads
 		
 		if firstLaunch {
 			defaultSettings.setBool(false, forKey: "LightTheme")
 			defaultSettings.setFloat(0.0, forKey: "Brightness")
 		}
 		
-		
-		defaultSettings.setBool(false, forKey: "lightMode")
+		if defaultSettings.boolForKey("LightTheme") {
+			ClockLabel.textColor = UIColor.blackColor()
+			SettingsButton.tintColor = UIColor.blackColor()
+			self.view.backgroundColor = UIColor.whiteColor()
+		}
+		if defaultSettings.boolForKey("LightTheme") == false {
+			ClockLabel.textColor = UIColor.whiteColor()
+			SettingsButton.tintColor = UIColor.whiteColor()
+			self.view.backgroundColor = UIColor.blackColor()
+		}
 		
 		super.viewDidLoad()
 		
 		
-				dateFormatter.timeStyle = .ShortStyle
+		dateFormatter.timeStyle = .ShortStyle // Defines time display
 		
 		let timeString = "\(dateFormatter.stringFromDate(NSDate()))"
 		
 		ClockLabel.text = timeString
 		
-		// Do any additional setup after loading the view, typically from a nib.
-		
-		self.timer = NSTimer.scheduledTimerWithTimeInterval(1.0,
+		self.timer = NSTimer.scheduledTimerWithTimeInterval(0.1,
 			target: self,
 			selector: Selector("tick"),
 			userInfo: nil,
@@ -66,7 +75,6 @@ public class ViewController: UIViewController {
 			SettingsButton.tintColor = UIColor.whiteColor()
 			self.view.backgroundColor = UIColor.blackColor()
 		}
-		ClockLabel.textColor = UIColor.whiteColor()
 				
 		ClockLabel.text = NSDateFormatter.localizedStringFromDate(NSDate(),
 			dateStyle: .NoStyle,

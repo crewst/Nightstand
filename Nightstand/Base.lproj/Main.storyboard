@@ -88,11 +88,8 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-mK-My9">
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-mK-My9">
                                                     <rect key="frame" x="155" y="7" width="439" height="31"/>
-                                                    <accessibility key="accessibilityConfiguration">
-                                                        <accessibilityTraits key="traits" notEnabled="YES"/>
-                                                    </accessibility>
                                                     <connections>
                                                         <action selector="BrightnessChanged:" destination="3mr-Uh-Pny" eventType="valueChanged" id="RXe-aH-B8r"/>
                                                         <action selector="BrightnessSlider:" destination="3mr-Uh-Pny" eventType="valueChanged" id="Ohn-iy-b1W"/>
