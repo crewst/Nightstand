@@ -23,6 +23,7 @@ public class ViewController: UIViewController {
 	
 	let defaultSettings = NSUserDefaults.standardUserDefaults()
 	let firstLaunch = NSUserDefaults.standardUserDefaults().boolForKey("IsFirstLaunch")
+	
 
 	////////////////////////////////////////
 	////////////////////////////////////////
