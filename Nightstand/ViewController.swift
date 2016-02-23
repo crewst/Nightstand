@@ -80,5 +80,9 @@ public class ViewController: UIViewController {
 			dateStyle: .NoStyle,
 			timeStyle: .ShortStyle)
 	}
+	
+	override public func prefersStatusBarHidden() -> Bool {
+		return true
+	}
 
 }

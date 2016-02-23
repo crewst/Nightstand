@@ -88,18 +88,17 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-mK-My9">
-                                                    <rect key="frame" x="155" y="7" width="439" height="31"/>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="p50-dZ-NHm">
+                                                    <rect key="frame" x="155" y="6" width="439" height="31"/>
                                                     <connections>
-                                                        <action selector="BrightnessChanged:" destination="3mr-Uh-Pny" eventType="valueChanged" id="RXe-aH-B8r"/>
-                                                        <action selector="BrightnessSlider:" destination="3mr-Uh-Pny" eventType="valueChanged" id="Ohn-iy-b1W"/>
+                                                        <action selector="BrightnessChanged:" destination="3mr-Uh-Pny" eventType="valueChanged" id="Mfz-gC-Uxr"/>
                                                     </connections>
                                                 </slider>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="cEH-mK-My9" firstAttribute="top" secondItem="Im5-UR-v6e" secondAttribute="topMargin" constant="-1" id="Rps-ev-f3U"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="cEH-mK-My9" secondAttribute="trailing" id="ctd-WM-IhP"/>
-                                                <constraint firstItem="cEH-mK-My9" firstAttribute="leading" secondItem="Im5-UR-v6e" secondAttribute="leadingMargin" constant="149" id="oOa-n1-3gN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="p50-dZ-NHm" secondAttribute="bottom" constant="-0.5" id="0e5-fq-teP"/>
+                                                <constraint firstItem="p50-dZ-NHm" firstAttribute="leading" secondItem="Im5-UR-v6e" secondAttribute="leadingMargin" constant="149" id="YsN-E7-KZ0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="p50-dZ-NHm" secondAttribute="trailing" id="x8C-EW-ekM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -185,7 +184,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="BrightnessSlider" destination="cEH-mK-My9" id="ehc-KL-2Sz"/>
+                        <outlet property="BrightnessSlider" destination="p50-dZ-NHm" id="o04-HJ-H7s"/>
                         <outlet property="CloseButton" destination="PJ2-fI-RfC" id="ZOz-PP-weV"/>
                         <outlet property="ThemeChanger" destination="L7n-gj-mta" id="BTW-Fm-BE2"/>
                     </connections>

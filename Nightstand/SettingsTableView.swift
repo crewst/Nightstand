@@ -25,6 +25,11 @@ public class SettingsTableView: UITableViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func BrightnessChanged(sender: UISlider) {
+        UIScreen.mainScreen().brightness = CGFloat(sender.value)
+        defaultSettings.setFloat(sender.value, forKey: "Brightness")
+    }
+    
     @IBAction func ThemeChanged(sender: UISegmentedControl!) {
         if ThemeChanger.selectedSegmentIndex == 0 {
             defaultSettings.setBool(false, forKey: "LightTheme")
@@ -37,12 +42,15 @@ public class SettingsTableView: UITableViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         if defaultSettings.boolForKey("LightTheme") {
             ThemeChanger.selectedSegmentIndex = 1
         }
         BrightnessSlider.value = defaultSettings.floatForKey("Brightness")
     }
     
-    
+    override public func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 
 }
