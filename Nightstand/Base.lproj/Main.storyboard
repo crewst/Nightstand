@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Clock View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Nightstand" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ClockViewController" customModule="Nightstand" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:09" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wne-iy-cOG">
-                                <rect key="frame" x="20" y="228.5" width="560" height="143.5"/>
+                                <rect key="frame" x="20" y="229" width="560" height="143"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="120"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -47,6 +47,7 @@
                     <connections>
                         <outlet property="ClockLabel" destination="Wne-iy-cOG" id="w7z-rU-ghH"/>
                         <outlet property="SettingsButton" destination="sOC-Jp-m78" id="91u-XE-gqs"/>
+                        <segue destination="q3l-t2-uE4" kind="show" identifier="PushToWeatherViewSegue" id="Ecx-Ui-iIU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -191,7 +192,25 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hg-hu-aGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="464"/>
+            <point key="canvasLocation" x="462" y="1162"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="uLM-r5-YBw">
+            <objects>
+                <viewController id="q3l-t2-uE4" customClass="WeatherViewController" customModule="Nightstand" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wJj-Wj-WZe"/>
+                        <viewControllerLayoutGuide type="bottom" id="bSc-ud-SMR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eg9-7i-DWc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0T-Xg-hQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288" y="464"/>
         </scene>
     </scenes>
 </document>

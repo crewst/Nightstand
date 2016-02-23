@@ -9,7 +9,7 @@
 import UIKit
 
 
-public class ViewController: UIViewController {
+public class ClockViewController: UIViewController {
 	
 	//GLOBAL VARIABLES
 	

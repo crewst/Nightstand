@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */; };
+		5177BD5C1C7CF58C0079684A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */; };
 		51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA97681C6AC7A6007205BD /* AppDelegate.swift */; };
-		51FA976B1C6AC7A6007205BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA976A1C6AC7A6007205BD /* ViewController.swift */; };
+		51FA976B1C6AC7A6007205BD /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA976A1C6AC7A6007205BD /* ClockViewController.swift */; };
 		51FA976E1C6AC7A6007205BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FA976C1C6AC7A6007205BD /* Main.storyboard */; };
 		51FA97701C6AC7A6007205BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FA976F1C6AC7A6007205BD /* Assets.xcassets */; };
 		51FA97731C6AC7A6007205BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */; };
@@ -36,9 +37,10 @@
 
 /* Begin PBXFileReference section */
 		5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableView.swift; sourceTree = "<group>"; };
+		5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		51FA97651C6AC7A6007205BD /* Nightstand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightstand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA97681C6AC7A6007205BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51FA976A1C6AC7A6007205BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
+		51FA976A1C6AC7A6007205BD /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		51FA976D1C6AC7A6007205BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51FA976F1C6AC7A6007205BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51FA97721C6AC7A6007205BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,8 +103,9 @@
 			children = (
 				5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */,
 				51FA97681C6AC7A6007205BD /* AppDelegate.swift */,
-				51FA976A1C6AC7A6007205BD /* ViewController.swift */,
+				51FA976A1C6AC7A6007205BD /* ClockViewController.swift */,
 				51FA976C1C6AC7A6007205BD /* Main.storyboard */,
+				5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */,
 				51FA976F1C6AC7A6007205BD /* Assets.xcassets */,
 				51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */,
 				51FA97741C6AC7A6007205BD /* Info.plist */,
@@ -260,7 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51FA976B1C6AC7A6007205BD /* ViewController.swift in Sources */,
+				51FA976B1C6AC7A6007205BD /* ClockViewController.swift in Sources */,
+				5177BD5C1C7CF58C0079684A /* WeatherViewController.swift in Sources */,
 				51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */,
 				5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */,
 			);
