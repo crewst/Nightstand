@@ -18,7 +18,6 @@ public class SettingsTableView: UITableViewController {
     let defaultSettings = NSUserDefaults.standardUserDefaults()
     
     // Define access to previous view controller
-    var CurrentVC: ViewController!
     
     
     @IBAction func closeSettings(sender: UIBarButtonItem) {
