@@ -15,6 +15,7 @@
 		51FA97731C6AC7A6007205BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */; };
 		51FA977E1C6AC7A6007205BD /* NightstandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA977D1C6AC7A6007205BD /* NightstandTests.swift */; };
 		51FA97891C6AC7A6007205BD /* NightstandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA97881C6AC7A6007205BD /* NightstandUITests.swift */; };
+		837BACB61C7FA6D5003EFF07 /* TrafficView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BACB51C7FA6D5003EFF07 /* TrafficView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		51FA97841C6AC7A6007205BD /* NightstandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightstandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA97881C6AC7A6007205BD /* NightstandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightstandUITests.swift; sourceTree = "<group>"; };
 		51FA978A1C6AC7A6007205BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837BACB51C7FA6D5003EFF07 /* TrafficView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				51FA97681C6AC7A6007205BD /* AppDelegate.swift */,
 				51FA976A1C6AC7A6007205BD /* ViewController.swift */,
 				51FA976C1C6AC7A6007205BD /* Main.storyboard */,
+				837BACB51C7FA6D5003EFF07 /* TrafficView.swift */,
 				51FA976F1C6AC7A6007205BD /* Assets.xcassets */,
 				51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */,
 				51FA97741C6AC7A6007205BD /* Info.plist */,
@@ -262,6 +265,7 @@
 			files = (
 				51FA976B1C6AC7A6007205BD /* ViewController.swift in Sources */,
 				51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */,
+				837BACB61C7FA6D5003EFF07 /* TrafficView.swift in Sources */,
 				5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
