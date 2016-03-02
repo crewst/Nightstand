@@ -33,6 +33,18 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yst-Ri-I8l">
+                                <rect key="frame" x="483" y="562" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="8fx-h3-DrJ"/>
+                                </constraints>
+                                <state key="normal" title="WeatherView">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="q3l-t2-uE4" kind="show" id="EIS-ba-RAT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -40,14 +52,15 @@
                             <constraint firstItem="sOC-Jp-m78" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Nal-q4-fVH"/>
                             <constraint firstItem="Wne-iy-cOG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QS7-pO-EzR"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Wne-iy-cOG" secondAttribute="leading" id="ZHH-Zs-oht"/>
+                            <constraint firstItem="Yst-Ri-I8l" firstAttribute="trailing" secondItem="Wne-iy-cOG" secondAttribute="trailing" id="ZVR-xC-gW0"/>
                             <constraint firstItem="Wne-iy-cOG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="apN-iG-13n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Wne-iy-cOG" secondAttribute="trailing" id="cmG-aB-gQS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yst-Ri-I8l" secondAttribute="bottom" constant="8" symbolic="YES" id="iE2-cY-rCg"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ClockLabel" destination="Wne-iy-cOG" id="w7z-rU-ghH"/>
                         <outlet property="SettingsButton" destination="sOC-Jp-m78" id="91u-XE-gqs"/>
-                        <segue destination="q3l-t2-uE4" kind="show" identifier="PushToWeatherViewSegue" id="Ecx-Ui-iIU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -205,8 +218,34 @@
                     <view key="view" contentMode="scaleToFill" id="Eg9-7i-DWc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-zm-ZpO">
+                                <rect key="frame" x="20" y="128" width="560" height="343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="200"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG0-6v-rzJ">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BackButtonTouched:" destination="q3l-t2-uE4" eventType="touchUpInside" id="EpB-N7-ViY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44010615650000001" green="0.82836629120000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oaf-zm-ZpO" firstAttribute="trailing" secondItem="Eg9-7i-DWc" secondAttribute="trailingMargin" id="23r-fR-Xaz"/>
+                            <constraint firstItem="oaf-zm-ZpO" firstAttribute="centerY" secondItem="Eg9-7i-DWc" secondAttribute="centerY" id="8HM-7D-d9h"/>
+                            <constraint firstItem="oaf-zm-ZpO" firstAttribute="leading" secondItem="Eg9-7i-DWc" secondAttribute="leadingMargin" id="Rlh-dW-vva"/>
+                            <constraint firstItem="oaf-zm-ZpO" firstAttribute="top" secondItem="wJj-Wj-WZe" secondAttribute="bottom" constant="108" id="YkZ-mD-07U"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BackButton" destination="XG0-6v-rzJ" id="pwL-cK-f7Y"/>
+                        <outlet property="tempLabel" destination="oaf-zm-ZpO" id="aEb-tG-QtH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0T-Xg-hQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
