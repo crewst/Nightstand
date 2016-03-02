@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10:09" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wne-iy-cOG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:09" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wne-iy-cOG">
                                 <rect key="frame" x="20" y="229" width="560" height="143"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="120"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,15 +33,24 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9U-PY-6GZ">
+                                <rect key="frame" x="264" y="541" width="72" height="30"/>
+                                <state key="normal" title="Show Map"/>
+                                <connections>
+                                    <segue destination="rZu-VL-Xc0" kind="show" id="tEB-ka-omF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sOC-Jp-m78" secondAttribute="bottom" constant="24" id="MA2-uS-b8Y"/>
-                            <constraint firstItem="sOC-Jp-m78" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Nal-q4-fVH"/>
-                            <constraint firstItem="Wne-iy-cOG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QS7-pO-EzR"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Wne-iy-cOG" secondAttribute="leading" id="ZHH-Zs-oht"/>
-                            <constraint firstItem="Wne-iy-cOG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="apN-iG-13n"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Wne-iy-cOG" secondAttribute="trailing" id="cmG-aB-gQS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sOC-Jp-m78" secondAttribute="bottom" constant="24" id="1Eu-JL-8fS"/>
+                            <constraint firstItem="Wne-iy-cOG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GVr-DL-tcY"/>
+                            <constraint firstItem="Wne-iy-cOG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Pkl-Yk-zp2"/>
+                            <constraint firstItem="Wne-iy-cOG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="X7C-0h-0m1"/>
+                            <constraint firstItem="Wne-iy-cOG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="209" id="j8S-Gg-ElU"/>
+                            <constraint firstItem="e9U-PY-6GZ" firstAttribute="top" secondItem="Wne-iy-cOG" secondAttribute="bottom" constant="43" id="lwh-4X-1NX"/>
+                            <constraint firstItem="e9U-PY-6GZ" firstAttribute="centerX" secondItem="Wne-iy-cOG" secondAttribute="centerX" id="nyU-12-q0d"/>
+                            <constraint firstItem="sOC-Jp-m78" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="o30-jm-DCv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -54,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="462" y="464"/>
         </scene>
-        <!--Traffic View-->
+        <!--Title-->
         <scene sceneID="2HS-0D-hSr">
             <objects>
                 <viewController id="rZu-VL-Xc0" customClass="TrafficView" customModule="Nightstand" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,12 +74,21 @@
                     <view key="view" contentMode="scaleToFill" id="x6p-8e-KBJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="j6E-mh-bTO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="guD-Ki-qBh"/>
+                    <connections>
+                        <outlet property="mapView" destination="j6E-mh-bTO" id="2Iz-vf-awF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6vv-JW-wEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1174" y="464"/>
+            <point key="canvasLocation" x="1202" y="470"/>
         </scene>
         <!--Settings Table View-->
         <scene sceneID="LYh-Xr-Ew0">
@@ -214,4 +232,7 @@
             <point key="canvasLocation" x="462" y="1285"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oPV-6P-vU0"/>
+    </inferredMetricsTieBreakers>
 </document>
