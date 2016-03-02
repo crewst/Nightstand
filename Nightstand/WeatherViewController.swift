@@ -12,6 +12,8 @@ class WeatherViewController: UIViewController {
 
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var BackButton: UIButton!
+    @IBOutlet weak var RainChanceLabel: UILabel!
+    @IBOutlet weak var HumidityLabel: UILabel!
     
     /////////////
     /////////////
@@ -23,7 +25,9 @@ class WeatherViewController: UIViewController {
             
             let currentWeather = CurrentWeather(WeatherDictionary: currentWeatherDictionary)
             
-            
+            tempLabel.text = "\(currentWeather.temperature)°"
+            RainChanceLabel.text = "\(currentWeather.precipChance)%"
+            HumidityLabel.text = "\(currentWeather.humidity)%"
             
         }
         

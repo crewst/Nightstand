@@ -29,7 +29,7 @@
 		<key>dewPoint</key>
 		<real>-0.5600000000000001</real>
 		<key>humidity</key>
-		<real>0.93</real>
+		<integer>93</integer>
 		<key>windSpeed</key>
 		<real>5.43</real>
 		<key>windBearing</key>
