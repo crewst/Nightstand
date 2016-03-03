@@ -10,7 +10,6 @@
 		5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */; };
 		5177BD5C1C7CF58C0079684A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */; };
 		51D7AA631C8773C30045F9D7 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51D7AA621C8773C30045F9D7 /* CurrentWeather.plist */; };
-		51D7AA651C8775460045F9D7 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D7AA641C8775460045F9D7 /* CurrentWeather.swift */; };
 		51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA97681C6AC7A6007205BD /* AppDelegate.swift */; };
 		51FA976B1C6AC7A6007205BD /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA976A1C6AC7A6007205BD /* ClockViewController.swift */; };
 		51FA976E1C6AC7A6007205BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FA976C1C6AC7A6007205BD /* Main.storyboard */; };
@@ -18,6 +17,9 @@
 		51FA97731C6AC7A6007205BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */; };
 		51FA977E1C6AC7A6007205BD /* NightstandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA977D1C6AC7A6007205BD /* NightstandTests.swift */; };
 		51FA97891C6AC7A6007205BD /* NightstandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA97881C6AC7A6007205BD /* NightstandUITests.swift */; };
+		51FFC8BA1C87D729001C0529 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FFC8B91C87D729001C0529 /* NetworkOperation.swift */; };
+		51FFC8BC1C87DAED001C0529 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FFC8BB1C87DAED001C0529 /* ForecastService.swift */; };
+		51FFC8BE1C87E206001C0529 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FFC8BD1C87E206001C0529 /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,6 @@
 		5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableView.swift; sourceTree = "<group>"; };
 		5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		51D7AA621C8773C30045F9D7 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
-		51D7AA641C8775460045F9D7 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		51FA97651C6AC7A6007205BD /* Nightstand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightstand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA97681C6AC7A6007205BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51FA976A1C6AC7A6007205BD /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -55,6 +56,9 @@
 		51FA97841C6AC7A6007205BD /* NightstandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightstandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA97881C6AC7A6007205BD /* NightstandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightstandUITests.swift; sourceTree = "<group>"; };
 		51FA978A1C6AC7A6007205BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51FFC8B91C87D729001C0529 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkOperation.swift; path = ../NetworkOperation.swift; sourceTree = "<group>"; };
+		51FFC8BB1C87DAED001C0529 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		51FFC8BD1C87E206001C0529 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		51FA97671C6AC7A6007205BD /* Nightstand */ = {
 			isa = PBXGroup;
 			children = (
+				51FFC8BB1C87DAED001C0529 /* ForecastService.swift */,
+				51FFC8B91C87D729001C0529 /* NetworkOperation.swift */,
 				5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */,
 				51FA97681C6AC7A6007205BD /* AppDelegate.swift */,
 				51FA976A1C6AC7A6007205BD /* ClockViewController.swift */,
@@ -114,7 +120,7 @@
 				51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */,
 				51FA97741C6AC7A6007205BD /* Info.plist */,
 				51D7AA621C8773C30045F9D7 /* CurrentWeather.plist */,
-				51D7AA641C8775460045F9D7 /* CurrentWeather.swift */,
+				51FFC8BD1C87E206001C0529 /* CurrentWeather.swift */,
 			);
 			path = Nightstand;
 			sourceTree = "<group>";
@@ -271,9 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				51FA976B1C6AC7A6007205BD /* ClockViewController.swift in Sources */,
-				51D7AA651C8775460045F9D7 /* CurrentWeather.swift in Sources */,
 				5177BD5C1C7CF58C0079684A /* WeatherViewController.swift in Sources */,
 				51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */,
+				51FFC8BE1C87E206001C0529 /* CurrentWeather.swift in Sources */,
+				51FFC8BA1C87D729001C0529 /* NetworkOperation.swift in Sources */,
+				51FFC8BC1C87DAED001C0529 /* ForecastService.swift in Sources */,
 				5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

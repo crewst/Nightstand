@@ -34,6 +34,7 @@ public class ClockViewController: UIViewController {
 		if firstLaunch {
 			defaultSettings.setBool(false, forKey: "LightTheme")
 			defaultSettings.setFloat(0.0, forKey: "Brightness")
+            defaultSettings.setBool(false, forKey: "IsFirstLaunch")
 		}
 		
 		if defaultSettings.boolForKey("LightTheme") {
@@ -60,7 +61,6 @@ public class ClockViewController: UIViewController {
 			selector: Selector("tick"),
 			userInfo: nil,
 			repeats: true)
-		UIScreen.mainScreen().brightness = CGFloat(0.0)
 	}
 	
 	@objc func tick() {
