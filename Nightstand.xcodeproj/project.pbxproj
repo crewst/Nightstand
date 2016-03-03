@@ -15,6 +15,7 @@
 		51FA97731C6AC7A6007205BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */; };
 		51FA977E1C6AC7A6007205BD /* NightstandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA977D1C6AC7A6007205BD /* NightstandTests.swift */; };
 		51FA97891C6AC7A6007205BD /* NightstandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA97881C6AC7A6007205BD /* NightstandUITests.swift */; };
+		83490BA41C8246A00072762C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83490BA31C8246A00072762C /* MapKit.framework */; };
 		837BACB61C7FA6D5003EFF07 /* TrafficView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BACB51C7FA6D5003EFF07 /* TrafficView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		51FA97841C6AC7A6007205BD /* NightstandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightstandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA97881C6AC7A6007205BD /* NightstandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightstandUITests.swift; sourceTree = "<group>"; };
 		51FA978A1C6AC7A6007205BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83490BA31C8246A00072762C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		837BACB51C7FA6D5003EFF07 /* TrafficView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83490BA41C8246A00072762C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		51FA975C1C6AC7A6007205BD = {
 			isa = PBXGroup;
 			children = (
+				83490BA31C8246A00072762C /* MapKit.framework */,
 				51FA97671C6AC7A6007205BD /* Nightstand */,
 				51FA977C1C6AC7A6007205BD /* NightstandTests */,
 				51FA97871C6AC7A6007205BD /* NightstandUITests */,
@@ -199,7 +203,12 @@
 				TargetAttributes = {
 					51FA97641C6AC7A6007205BD = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 7YEY64R54C;
+						DevelopmentTeam = N36745TWK4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					51FA97781C6AC7A6007205BD = {
 						CreatedOnToolsVersion = 7.2.1;
