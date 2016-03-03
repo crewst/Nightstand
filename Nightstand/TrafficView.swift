@@ -2,7 +2,7 @@
 //  TrafficView.swift
 //  Nightstand
 //
-//  Created by Mac Lab on 2/25/16.
+//  Created by Ramone Robertson on 2/25/16.
 //  Copyright © 2016 SWOSU Software Engineering. All rights reserved.
 //
 
@@ -16,7 +16,7 @@ import CoreLocation
 
 class TrafficView:UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
     
-    weak var mapView: MKMapView!
+    @IBOutlet weak var mapView: MKMapView!
     
     let  locationManager = CLLocationManager()
     

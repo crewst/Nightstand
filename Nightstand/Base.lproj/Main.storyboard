@@ -33,11 +33,11 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9U-PY-6GZ">
-                                <rect key="frame" x="264" y="541" width="72" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9U-PY-6GZ">
+                                <rect key="frame" x="264" y="415" width="72" height="30"/>
                                 <state key="normal" title="Show Map"/>
                                 <connections>
-                                    <segue destination="rZu-VL-Xc0" kind="show" id="tEB-ka-omF"/>
+                                    <segue destination="rZu-VL-Xc0" kind="show" id="IcJ-qK-rEg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,7 +56,6 @@
                     <connections>
                         <outlet property="ClockLabel" destination="Wne-iy-cOG" id="w7z-rU-ghH"/>
                         <outlet property="SettingsButton" destination="sOC-Jp-m78" id="91u-XE-gqs"/>
-                        <segue destination="rZu-VL-Xc0" kind="show" id="oPV-6P-vU0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,20 +74,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="j6E-mh-bTO">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="j6E-mh-bTO">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPd-lp-kDv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="kCF-Gd-XK8"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j6E-mh-bTO" firstAttribute="bottom" secondItem="QCl-zw-fRM" secondAttribute="top" id="0Ph-VK-KX3"/>
+                            <constraint firstAttribute="trailing" secondItem="j6E-mh-bTO" secondAttribute="trailing" id="19l-Jf-JEy"/>
+                            <constraint firstItem="bPd-lp-kDv" firstAttribute="top" secondItem="x6p-8e-KBJ" secondAttribute="top" id="H8t-Ca-01U"/>
+                            <constraint firstItem="j6E-mh-bTO" firstAttribute="top" secondItem="bPd-lp-kDv" secondAttribute="bottom" id="Wzo-QD-DYL"/>
+                            <constraint firstItem="j6E-mh-bTO" firstAttribute="leading" secondItem="bPd-lp-kDv" secondAttribute="leading" id="YoB-Wv-BzM"/>
+                            <constraint firstItem="j6E-mh-bTO" firstAttribute="leading" secondItem="x6p-8e-KBJ" secondAttribute="leading" id="ecF-Rz-qcJ"/>
+                            <constraint firstItem="j6E-mh-bTO" firstAttribute="trailing" secondItem="bPd-lp-kDv" secondAttribute="trailing" id="jhT-DO-p7n"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="guD-Ki-qBh"/>
                     <connections>
-                        <outlet property="mapView" destination="j6E-mh-bTO" id="2Iz-vf-awF"/>
+                        <outlet property="mapView" destination="j6E-mh-bTO" id="GQ9-Ll-RJt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6vv-JW-wEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1202" y="470"/>
+            <point key="canvasLocation" x="1202" y="464"/>
         </scene>
         <!--Settings Table View-->
         <scene sceneID="LYh-Xr-Ew0">
@@ -232,7 +246,4 @@
             <point key="canvasLocation" x="462" y="1285"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="oPV-6P-vU0"/>
-    </inferredMetricsTieBreakers>
 </document>
