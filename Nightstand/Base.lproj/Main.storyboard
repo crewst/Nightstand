@@ -68,6 +68,48 @@
             </objects>
             <point key="canvasLocation" x="462" y="464"/>
         </scene>
+        <!--Title-->
+        <scene sceneID="2HS-0D-hSr">
+            <objects>
+                <viewController id="rZu-VL-Xc0" customClass="TrafficView" customModule="Nightstand" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kd8-QY-kr9"/>
+                        <viewControllerLayoutGuide type="bottom" id="QCl-zw-fRM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x6p-8e-KBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="j6E-mh-bTO">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                            </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPd-lp-kDv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="kCF-Gd-XK8"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j6E-mh-bTO" firstAttribute="bottom" secondItem="QCl-zw-fRM" secondAttribute="top" id="0Ph-VK-KX3"/>
+                            <constraint firstAttribute="trailing" secondItem="j6E-mh-bTO" secondAttribute="trailing" id="19l-Jf-JEy"/>
+                            <constraint firstItem="bPd-lp-kDv" firstAttribute="top" secondItem="x6p-8e-KBJ" secondAttribute="top" id="H8t-Ca-01U"/>
+                            <constraint firstItem="j6E-mh-bTO" firstAttribute="top" secondItem="bPd-lp-kDv" secondAttribute="bottom" id="Wzo-QD-DYL"/>
+                            <constraint firstItem="j6E-mh-bTO" firstAttribute="leading" secondItem="bPd-lp-kDv" secondAttribute="leading" id="YoB-Wv-BzM"/>
+                            <constraint firstItem="j6E-mh-bTO" firstAttribute="leading" secondItem="x6p-8e-KBJ" secondAttribute="leading" id="ecF-Rz-qcJ"/>
+                            <constraint firstItem="j6E-mh-bTO" firstAttribute="trailing" secondItem="bPd-lp-kDv" secondAttribute="trailing" id="jhT-DO-p7n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="guD-Ki-qBh"/>
+                    <connections>
+                        <outlet property="mapView" destination="j6E-mh-bTO" id="GQ9-Ll-RJt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vv-JW-wEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="464"/>
+        </scene>
         <!--Settings Table View-->
         <scene sceneID="LYh-Xr-Ew0">
             <objects>
@@ -75,7 +117,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="top" semanticContentAttribute="spatial" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="GsW-my-cnl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <toolbar key="tableHeaderView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="C6c-aD-1Ao">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -100,7 +142,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brightness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzK-IM-dDj">
                                                     <rect key="frame" x="8" y="11" width="141" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="p50-dZ-NHm">
@@ -127,7 +169,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Em2-PN-RbN">
                                                     <rect key="frame" x="8" y="10" width="116" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="L7n-gj-mta">

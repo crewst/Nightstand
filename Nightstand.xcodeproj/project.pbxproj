@@ -66,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83490BA41C8246A00072762C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +90,7 @@
 		51FA975C1C6AC7A6007205BD = {
 			isa = PBXGroup;
 			children = (
+				83490BA31C8246A00072762C /* MapKit.framework */,
 				51FA97671C6AC7A6007205BD /* Nightstand */,
 				51FA977C1C6AC7A6007205BD /* NightstandTests */,
 				51FA97871C6AC7A6007205BD /* NightstandUITests */,
@@ -212,6 +214,11 @@
 					51FA97641C6AC7A6007205BD = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 7YEY64R54C;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					51FA97781C6AC7A6007205BD = {
 						CreatedOnToolsVersion = 7.2.1;
