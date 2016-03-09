@@ -7,6 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5104CD211C909F2200C7CC07 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 5104CD201C909F2200C7CC07 /* alarm.png */; };
+		511A10411C88DF93004DCA52 /* TrafficView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A10401C88DF93004DCA52 /* TrafficView.swift */; };
+		511A10471C8E0D96004DCA52 /* SetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A10461C8E0D96004DCA52 /* SetupController.swift */; };
+		511A10491C8FCDD0004DCA52 /* UseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A10481C8FCDD0004DCA52 /* UseLocationViewController.swift */; };
+		511A108B1C901333004DCA52 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A108A1C901333004DCA52 /* bg.png */; };
+		511A10AA1C901653004DCA52 /* img0.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A108C1C901653004DCA52 /* img0.png */; };
+		511A10AB1C901653004DCA52 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A108D1C901653004DCA52 /* img1.png */; };
+		511A10AC1C901653004DCA52 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A108E1C901653004DCA52 /* img2.png */; };
+		511A10AD1C901653004DCA52 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A108F1C901653004DCA52 /* img3.png */; };
+		511A10AE1C901653004DCA52 /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10901C901653004DCA52 /* img4.png */; };
+		511A10AF1C901653004DCA52 /* img5.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10911C901653004DCA52 /* img5.png */; };
+		511A10B01C901653004DCA52 /* img6.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10921C901653004DCA52 /* img6.png */; };
+		511A10B11C901653004DCA52 /* img7.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10931C901653004DCA52 /* img7.png */; };
+		511A10B21C901653004DCA52 /* img8.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10941C901653004DCA52 /* img8.png */; };
+		511A10B31C901653004DCA52 /* img9.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10951C901653004DCA52 /* img9.png */; };
+		511A10B41C901653004DCA52 /* img10.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10961C901653004DCA52 /* img10.png */; };
+		511A10B51C901653004DCA52 /* img11.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10971C901653004DCA52 /* img11.png */; };
+		511A10B61C901653004DCA52 /* img12.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10981C901653004DCA52 /* img12.png */; };
+		511A10B71C901653004DCA52 /* img13.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10991C901653004DCA52 /* img13.png */; };
+		511A10B81C901653004DCA52 /* img14.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A109A1C901653004DCA52 /* img14.png */; };
+		511A10B91C901653004DCA52 /* img15.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A109B1C901653004DCA52 /* img15.png */; };
+		511A10BA1C901653004DCA52 /* img16.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A109C1C901653004DCA52 /* img16.png */; };
+		511A10BB1C901653004DCA52 /* img17.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A109D1C901653004DCA52 /* img17.png */; };
+		511A10BC1C901653004DCA52 /* img18.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A109E1C901653004DCA52 /* img18.png */; };
+		511A10BD1C901653004DCA52 /* img19.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A109F1C901653004DCA52 /* img19.png */; };
+		511A10BE1C901653004DCA52 /* img20.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A01C901653004DCA52 /* img20.png */; };
+		511A10BF1C901653004DCA52 /* img21.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A11C901653004DCA52 /* img21.png */; };
+		511A10C01C901653004DCA52 /* img22.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A21C901653004DCA52 /* img22.png */; };
+		511A10C11C901653004DCA52 /* img23.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A31C901653004DCA52 /* img23.png */; };
+		511A10C21C901653004DCA52 /* img24.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A41C901653004DCA52 /* img24.png */; };
+		511A10C31C901653004DCA52 /* img25.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A51C901653004DCA52 /* img25.png */; };
+		511A10C41C901653004DCA52 /* img26.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A61C901653004DCA52 /* img26.png */; };
+		511A10C51C901653004DCA52 /* img27.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A71C901653004DCA52 /* img27.png */; };
+		511A10C61C901653004DCA52 /* img28.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A81C901653004DCA52 /* img28.png */; };
+		511A10C71C901653004DCA52 /* img29.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A91C901653004DCA52 /* img29.png */; };
+		511A10C91C908C2D004DCA52 /* AlarmSetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A10C81C908C2D004DCA52 /* AlarmSetupController.swift */; };
 		5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */; };
 		5177BD5C1C7CF58C0079684A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */; };
 		51D7AA631C8773C30045F9D7 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51D7AA621C8773C30045F9D7 /* CurrentWeather.plist */; };
@@ -40,11 +76,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5104CD201C909F2200C7CC07 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
+		511A10401C88DF93004DCA52 /* TrafficView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficView.swift; sourceTree = "<group>"; };
+		511A10461C8E0D96004DCA52 /* SetupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupController.swift; path = Nightstand/SetupController.swift; sourceTree = "<group>"; };
+		511A10481C8FCDD0004DCA52 /* UseLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UseLocationViewController.swift; path = Nightstand/UseLocationViewController.swift; sourceTree = "<group>"; };
+		511A108A1C901333004DCA52 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		511A108C1C901653004DCA52 /* img0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img0.png; sourceTree = "<group>"; };
+		511A108D1C901653004DCA52 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		511A108E1C901653004DCA52 /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
+		511A108F1C901653004DCA52 /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
+		511A10901C901653004DCA52 /* img4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
+		511A10911C901653004DCA52 /* img5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img5.png; sourceTree = "<group>"; };
+		511A10921C901653004DCA52 /* img6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img6.png; sourceTree = "<group>"; };
+		511A10931C901653004DCA52 /* img7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img7.png; sourceTree = "<group>"; };
+		511A10941C901653004DCA52 /* img8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img8.png; sourceTree = "<group>"; };
+		511A10951C901653004DCA52 /* img9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img9.png; sourceTree = "<group>"; };
+		511A10961C901653004DCA52 /* img10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img10.png; sourceTree = "<group>"; };
+		511A10971C901653004DCA52 /* img11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img11.png; sourceTree = "<group>"; };
+		511A10981C901653004DCA52 /* img12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img12.png; sourceTree = "<group>"; };
+		511A10991C901653004DCA52 /* img13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img13.png; sourceTree = "<group>"; };
+		511A109A1C901653004DCA52 /* img14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img14.png; sourceTree = "<group>"; };
+		511A109B1C901653004DCA52 /* img15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img15.png; sourceTree = "<group>"; };
+		511A109C1C901653004DCA52 /* img16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img16.png; sourceTree = "<group>"; };
+		511A109D1C901653004DCA52 /* img17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img17.png; sourceTree = "<group>"; };
+		511A109E1C901653004DCA52 /* img18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img18.png; sourceTree = "<group>"; };
+		511A109F1C901653004DCA52 /* img19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img19.png; sourceTree = "<group>"; };
+		511A10A01C901653004DCA52 /* img20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img20.png; sourceTree = "<group>"; };
+		511A10A11C901653004DCA52 /* img21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img21.png; sourceTree = "<group>"; };
+		511A10A21C901653004DCA52 /* img22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img22.png; sourceTree = "<group>"; };
+		511A10A31C901653004DCA52 /* img23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img23.png; sourceTree = "<group>"; };
+		511A10A41C901653004DCA52 /* img24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img24.png; sourceTree = "<group>"; };
+		511A10A51C901653004DCA52 /* img25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img25.png; sourceTree = "<group>"; };
+		511A10A61C901653004DCA52 /* img26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img26.png; sourceTree = "<group>"; };
+		511A10A71C901653004DCA52 /* img27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img27.png; sourceTree = "<group>"; };
+		511A10A81C901653004DCA52 /* img28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img28.png; sourceTree = "<group>"; };
+		511A10A91C901653004DCA52 /* img29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img29.png; sourceTree = "<group>"; };
+		511A10C81C908C2D004DCA52 /* AlarmSetupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSetupController.swift; sourceTree = "<group>"; };
 		5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableView.swift; sourceTree = "<group>"; };
 		5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		51D7AA621C8773C30045F9D7 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
 		51FA97651C6AC7A6007205BD /* Nightstand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightstand.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		51FA97681C6AC7A6007205BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51FA97681C6AC7A6007205BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Nightstand/AppDelegate.swift; sourceTree = "<group>"; };
 		51FA976A1C6AC7A6007205BD /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		51FA976D1C6AC7A6007205BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51FA976F1C6AC7A6007205BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +138,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83490BA41C8246A00072762C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,10 +158,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5104CD1D1C909EEB00C7CC07 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				5104CD201C909F2200C7CC07 /* alarm.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		511A104A1C900B07004DCA52 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				5104CD1D1C909EEB00C7CC07 /* Icons */,
+				511A10C81C908C2D004DCA52 /* AlarmSetupController.swift */,
+				51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */,
+				51FA97681C6AC7A6007205BD /* AppDelegate.swift */,
+				511A10461C8E0D96004DCA52 /* SetupController.swift */,
+				511A10481C8FCDD0004DCA52 /* UseLocationViewController.swift */,
+			);
+			name = Setup;
+			sourceTree = "<group>";
+		};
+		511A104B1C900B46004DCA52 /* LocationAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				511A108C1C901653004DCA52 /* img0.png */,
+				511A108D1C901653004DCA52 /* img1.png */,
+				511A108E1C901653004DCA52 /* img2.png */,
+				511A108F1C901653004DCA52 /* img3.png */,
+				511A10901C901653004DCA52 /* img4.png */,
+				511A10911C901653004DCA52 /* img5.png */,
+				511A10921C901653004DCA52 /* img6.png */,
+				511A10931C901653004DCA52 /* img7.png */,
+				511A10941C901653004DCA52 /* img8.png */,
+				511A10951C901653004DCA52 /* img9.png */,
+				511A10961C901653004DCA52 /* img10.png */,
+				511A10971C901653004DCA52 /* img11.png */,
+				511A10981C901653004DCA52 /* img12.png */,
+				511A10991C901653004DCA52 /* img13.png */,
+				511A109A1C901653004DCA52 /* img14.png */,
+				511A109B1C901653004DCA52 /* img15.png */,
+				511A109C1C901653004DCA52 /* img16.png */,
+				511A109D1C901653004DCA52 /* img17.png */,
+				511A109E1C901653004DCA52 /* img18.png */,
+				511A109F1C901653004DCA52 /* img19.png */,
+				511A10A01C901653004DCA52 /* img20.png */,
+				511A10A11C901653004DCA52 /* img21.png */,
+				511A10A21C901653004DCA52 /* img22.png */,
+				511A10A31C901653004DCA52 /* img23.png */,
+				511A10A41C901653004DCA52 /* img24.png */,
+				511A10A51C901653004DCA52 /* img25.png */,
+				511A10A61C901653004DCA52 /* img26.png */,
+				511A10A71C901653004DCA52 /* img27.png */,
+				511A10A81C901653004DCA52 /* img28.png */,
+				511A10A91C901653004DCA52 /* img29.png */,
+				511A108A1C901333004DCA52 /* bg.png */,
+			);
+			name = LocationAnimation;
+			sourceTree = "<group>";
+		};
 		51FA975C1C6AC7A6007205BD = {
 			isa = PBXGroup;
 			children = (
-				83490BA31C8246A00072762C /* MapKit.framework */,
+				511A104B1C900B46004DCA52 /* LocationAnimation */,
+				511A104A1C900B07004DCA52 /* Setup */,
 				51FA97671C6AC7A6007205BD /* Nightstand */,
 				51FA977C1C6AC7A6007205BD /* NightstandTests */,
 				51FA97871C6AC7A6007205BD /* NightstandUITests */,
@@ -114,12 +245,11 @@
 				51FFC8BB1C87DAED001C0529 /* ForecastService.swift */,
 				51FFC8B91C87D729001C0529 /* NetworkOperation.swift */,
 				5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */,
-				51FA97681C6AC7A6007205BD /* AppDelegate.swift */,
+				511A10401C88DF93004DCA52 /* TrafficView.swift */,
 				51FA976A1C6AC7A6007205BD /* ClockViewController.swift */,
 				51FA976C1C6AC7A6007205BD /* Main.storyboard */,
 				5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */,
 				51FA976F1C6AC7A6007205BD /* Assets.xcassets */,
-				51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */,
 				51FA97741C6AC7A6007205BD /* Info.plist */,
 				51D7AA621C8773C30045F9D7 /* CurrentWeather.plist */,
 				51FFC8BD1C87E206001C0529 /* CurrentWeather.swift */,
@@ -256,9 +386,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				51FA97731C6AC7A6007205BD /* LaunchScreen.storyboard in Resources */,
+				511A10C41C901653004DCA52 /* img26.png in Resources */,
+				511A10C01C901653004DCA52 /* img22.png in Resources */,
 				51D7AA631C8773C30045F9D7 /* CurrentWeather.plist in Resources */,
+				511A10BC1C901653004DCA52 /* img18.png in Resources */,
+				511A10B81C901653004DCA52 /* img14.png in Resources */,
+				511A10B21C901653004DCA52 /* img8.png in Resources */,
+				511A10C61C901653004DCA52 /* img28.png in Resources */,
+				511A10B01C901653004DCA52 /* img6.png in Resources */,
+				511A10B91C901653004DCA52 /* img15.png in Resources */,
+				511A10BD1C901653004DCA52 /* img19.png in Resources */,
+				511A10AD1C901653004DCA52 /* img3.png in Resources */,
+				511A10AC1C901653004DCA52 /* img2.png in Resources */,
+				511A10BA1C901653004DCA52 /* img16.png in Resources */,
+				511A10B51C901653004DCA52 /* img11.png in Resources */,
+				511A10AB1C901653004DCA52 /* img1.png in Resources */,
+				511A10C31C901653004DCA52 /* img25.png in Resources */,
+				511A10B61C901653004DCA52 /* img12.png in Resources */,
+				511A10AA1C901653004DCA52 /* img0.png in Resources */,
+				511A10BE1C901653004DCA52 /* img20.png in Resources */,
+				511A10C21C901653004DCA52 /* img24.png in Resources */,
+				511A10AE1C901653004DCA52 /* img4.png in Resources */,
+				511A10C71C901653004DCA52 /* img29.png in Resources */,
+				511A10BF1C901653004DCA52 /* img21.png in Resources */,
 				51FA97701C6AC7A6007205BD /* Assets.xcassets in Resources */,
+				511A10C51C901653004DCA52 /* img27.png in Resources */,
+				511A10B41C901653004DCA52 /* img10.png in Resources */,
+				511A10C11C901653004DCA52 /* img23.png in Resources */,
+				511A10B71C901653004DCA52 /* img13.png in Resources */,
+				5104CD211C909F2200C7CC07 /* alarm.png in Resources */,
+				511A10B11C901653004DCA52 /* img7.png in Resources */,
+				511A10B31C901653004DCA52 /* img9.png in Resources */,
+				511A10BB1C901653004DCA52 /* img17.png in Resources */,
+				511A10AF1C901653004DCA52 /* img5.png in Resources */,
 				51FA976E1C6AC7A6007205BD /* Main.storyboard in Resources */,
+				511A108B1C901333004DCA52 /* bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +448,13 @@
 				51FA976B1C6AC7A6007205BD /* ClockViewController.swift in Sources */,
 				5177BD5C1C7CF58C0079684A /* WeatherViewController.swift in Sources */,
 				51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */,
+				511A10491C8FCDD0004DCA52 /* UseLocationViewController.swift in Sources */,
 				51FFC8BE1C87E206001C0529 /* CurrentWeather.swift in Sources */,
 				51FFC8BA1C87D729001C0529 /* NetworkOperation.swift in Sources */,
 				51FFC8BC1C87DAED001C0529 /* ForecastService.swift in Sources */,
+				511A10471C8E0D96004DCA52 /* SetupController.swift in Sources */,
+				511A10411C88DF93004DCA52 /* TrafficView.swift in Sources */,
+				511A10C91C908C2D004DCA52 /* AlarmSetupController.swift in Sources */,
 				5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +505,7 @@
 				51FA97721C6AC7A6007205BD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Nightstand;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

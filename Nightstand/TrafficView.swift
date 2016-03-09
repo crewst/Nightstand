@@ -20,6 +20,9 @@ class TrafficView:UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
     
     let  locationManager = CLLocationManager()
     
+    @IBAction func BackButtonTouched(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,5 +62,9 @@ func locationManager(manager: CLLocationManager, didUpdateLocations locations: [
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError)
     {
         print("Errors: " + error.localizedDescription)
-    };
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 }

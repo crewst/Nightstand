@@ -26,6 +26,9 @@ class WeatherViewController: UIViewController,CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let latitude = locationManager.location?.coordinate.latitude
+        let longitude = locationManager.location?.coordinate.longitude
+        
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
@@ -33,7 +36,7 @@ class WeatherViewController: UIViewController,CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         
         let forecastService = ForecastService(APIKey: apiKey)
-        forecastService.getForecast(locationManager.location!.coordinate.latitude, lon: locationManager.location!.coordinate.longitude) {
+        forecastService.getForecast(latitude!, lon: longitude!) {
             (let currently) in
             if let currentWeather = currently{
                 dispatch_async(dispatch_get_main_queue()) {
@@ -47,18 +50,9 @@ class WeatherViewController: UIViewController,CLLocationManagerDelegate {
                         self.HumidityLabel?.text = "\(humidity)%"
                     }
                 }
+                }
             }
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    }
     
         
     @IBAction func BackButtonTouched(sender: AnyObject) {
@@ -71,3 +65,4 @@ class WeatherViewController: UIViewController,CLLocationManagerDelegate {
 }
 
 // SDG
+
