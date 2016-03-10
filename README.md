@@ -1,5 +1,11 @@
 # Nightstand
 
+## Intro Screen Branch
+
+The Intro Screen Branch is committed to *alpha* development of the setup display of Nightstand.
+
+---
+
 Nightstand is an iOS app, build with Xcode, which aims to create an Apple Watch-like interface for nighttime use.
 
 The app *should* be able to keep the device awake throughout the night to serve as a large clock display. 
