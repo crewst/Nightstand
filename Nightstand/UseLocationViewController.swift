@@ -19,10 +19,13 @@ class UseLocationViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var openSettingsButton: UIButton!
+    @IBOutlet weak var skipButton: UIButton!
     
     var locationManager: CLLocationManager!
     
     var needLocationString = "In order for Nightstand to work properly, it needs access to your location. This information is only used to retrieve weather and traffic data and never leaves the app. To enable location services, use the button below."
+    
+    var warningString = "If you choose not to allow access to your location, Nightstand can only function as a simple alarm clock. Are you sure you want to deny locaion access?"
     
     override func viewDidLoad() {
         
@@ -72,7 +75,6 @@ class UseLocationViewController: UIViewController, CLLocationManagerDelegate {
         ]
         
         imageAnimation.animationDuration = 1.5
-        imageAnimation.animationRepeatCount = 2
         imageAnimation.startAnimating()
         
     }
@@ -135,12 +137,18 @@ class UseLocationViewController: UIViewController, CLLocationManagerDelegate {
         bottomLabel.hidden = true
     }
     func locationAllowed() {
-        let AlarmSetupControllerObject = self.storyboard?.instantiateViewControllerWithIdentifier("AlarmSetupController") as? AlarmSetupController
-        self.navigationController?.pushViewController(AlarmSetupControllerObject!, animated: true)
+        let AlarmInitControllerObject = self.storyboard?.instantiateViewControllerWithIdentifier("AlarmInitController") as? AlarmInitController
+        self.navigationController?.pushViewController(AlarmInitControllerObject!, animated: true)
+    }
+    @IBAction func skipAction(sender: AnyObject) {
+        let alert = UIAlertController(title: "Are You Sure?", message: warningString, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
+        alert.addAction(UIAlertAction(title: "I'm Sure", style: UIAlertActionStyle.Default, handler: nil))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 
 }
 
 // SDG
-
 

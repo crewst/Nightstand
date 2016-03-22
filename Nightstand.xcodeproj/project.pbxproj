@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5104CD211C909F2200C7CC07 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 5104CD201C909F2200C7CC07 /* alarm.png */; };
+		510FE0471C90C73200682D10 /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 510FE0461C90C73200682D10 /* moon.png */; };
+		510FE04B1C910D0A00682D10 /* RepeatDaysController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510FE04A1C910D0A00682D10 /* RepeatDaysController.swift */; };
 		511A10411C88DF93004DCA52 /* TrafficView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A10401C88DF93004DCA52 /* TrafficView.swift */; };
 		511A10471C8E0D96004DCA52 /* SetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A10461C8E0D96004DCA52 /* SetupController.swift */; };
 		511A10491C8FCDD0004DCA52 /* UseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A10481C8FCDD0004DCA52 /* UseLocationViewController.swift */; };
@@ -44,6 +46,7 @@
 		511A10C71C901653004DCA52 /* img29.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A91C901653004DCA52 /* img29.png */; };
 		511A10C91C908C2D004DCA52 /* AlarmSetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A10C81C908C2D004DCA52 /* AlarmSetupController.swift */; };
 		5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */; };
+		517770681C90C237006FE9C3 /* AlarmInitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517770671C90C237006FE9C3 /* AlarmInitController.swift */; };
 		5177BD5C1C7CF58C0079684A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */; };
 		51D7AA631C8773C30045F9D7 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51D7AA621C8773C30045F9D7 /* CurrentWeather.plist */; };
 		51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA97681C6AC7A6007205BD /* AppDelegate.swift */; };
@@ -77,6 +80,8 @@
 
 /* Begin PBXFileReference section */
 		5104CD201C909F2200C7CC07 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
+		510FE0461C90C73200682D10 /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon.png; sourceTree = "<group>"; };
+		510FE04A1C910D0A00682D10 /* RepeatDaysController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatDaysController.swift; sourceTree = "<group>"; };
 		511A10401C88DF93004DCA52 /* TrafficView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficView.swift; sourceTree = "<group>"; };
 		511A10461C8E0D96004DCA52 /* SetupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupController.swift; path = Nightstand/SetupController.swift; sourceTree = "<group>"; };
 		511A10481C8FCDD0004DCA52 /* UseLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UseLocationViewController.swift; path = Nightstand/UseLocationViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +118,7 @@
 		511A10A91C901653004DCA52 /* img29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img29.png; sourceTree = "<group>"; };
 		511A10C81C908C2D004DCA52 /* AlarmSetupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSetupController.swift; sourceTree = "<group>"; };
 		5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableView.swift; sourceTree = "<group>"; };
+		517770671C90C237006FE9C3 /* AlarmInitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInitController.swift; sourceTree = "<group>"; };
 		5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		51D7AA621C8773C30045F9D7 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
 		51FA97651C6AC7A6007205BD /* Nightstand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightstand.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				5104CD201C909F2200C7CC07 /* alarm.png */,
+				510FE0461C90C73200682D10 /* moon.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -169,6 +176,8 @@
 		511A104A1C900B07004DCA52 /* Setup */ = {
 			isa = PBXGroup;
 			children = (
+				510FE04A1C910D0A00682D10 /* RepeatDaysController.swift */,
+				517770671C90C237006FE9C3 /* AlarmInitController.swift */,
 				5104CD1D1C909EEB00C7CC07 /* Icons */,
 				511A10C81C908C2D004DCA52 /* AlarmSetupController.swift */,
 				51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */,
@@ -386,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51FA97731C6AC7A6007205BD /* LaunchScreen.storyboard in Resources */,
+				510FE0471C90C73200682D10 /* moon.png in Resources */,
 				511A10C41C901653004DCA52 /* img26.png in Resources */,
 				511A10C01C901653004DCA52 /* img22.png in Resources */,
 				51D7AA631C8773C30045F9D7 /* CurrentWeather.plist in Resources */,
@@ -453,7 +463,9 @@
 				51FFC8BA1C87D729001C0529 /* NetworkOperation.swift in Sources */,
 				51FFC8BC1C87DAED001C0529 /* ForecastService.swift in Sources */,
 				511A10471C8E0D96004DCA52 /* SetupController.swift in Sources */,
+				510FE04B1C910D0A00682D10 /* RepeatDaysController.swift in Sources */,
 				511A10411C88DF93004DCA52 /* TrafficView.swift in Sources */,
+				517770681C90C237006FE9C3 /* AlarmInitController.swift in Sources */,
 				511A10C91C908C2D004DCA52 /* AlarmSetupController.swift in Sources */,
 				5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */,
 			);

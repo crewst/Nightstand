@@ -8,14 +8,21 @@
 
 import UIKit
 
-class AlarmSetupController: UIViewController {
+class AlarmSetupController: UITableViewController {
 
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+                
     }
+    
+    
 
+    @IBAction func closeForm(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
 

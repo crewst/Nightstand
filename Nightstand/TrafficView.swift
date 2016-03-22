@@ -3,6 +3,7 @@
 //  Nightstand
 //
 //  Created by Ramone Robertson on 2/25/16.
+//  Edited by Tommy Crews on 3/22/16.
 //  Copyright © 2016 SWOSU Software Engineering. All rights reserved.
 //
 
@@ -68,3 +69,6 @@ func locationManager(manager: CLLocationManager, didUpdateLocations locations: [
         return true
     }
 }
+
+// SDG
+
