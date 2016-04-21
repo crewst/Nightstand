@@ -47,3 +47,6 @@ class NetworkOperation {
         dataTask.resume()
     }
 }
+
+// SDG
+

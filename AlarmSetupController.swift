@@ -18,11 +18,13 @@ class AlarmSetupController: UITableViewController {
                 
     }
     
+    let defaultSettings = NSUserDefaults.standardUserDefaults()
     
-
-    @IBAction func closeForm(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    
+    @IBAction func ChangeTime(sender: AnyObject) {
+        defaultSettings.integerForKey(<#T##defaultName: String##String#>)
     }
+
 
 }
 

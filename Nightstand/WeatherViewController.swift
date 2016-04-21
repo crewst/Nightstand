@@ -26,17 +26,15 @@ class WeatherViewController: UIViewController,CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let latitude = locationManager.location?.coordinate.latitude
-        let longitude = locationManager.location?.coordinate.longitude
-        
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
+        
         let forecastService = ForecastService(APIKey: apiKey)
-        forecastService.getForecast(latitude!, lon: longitude!) {
+        forecastService.getForecast((locationManager.location?.coordinate.latitude)!, lon: (locationManager.location?.coordinate.longitude)!) {
             (let currently) in
             if let currentWeather = currently{
                 dispatch_async(dispatch_get_main_queue()) {
@@ -51,9 +49,8 @@ class WeatherViewController: UIViewController,CLLocationManagerDelegate {
                     }
                 }
                 }
-            }
-        }
-    
+           }
+      }
         
     @IBAction func BackButtonTouched(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)

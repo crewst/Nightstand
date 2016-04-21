@@ -35,7 +35,7 @@ public class ClockViewController: UIViewController {
 			defaultSettings.setBool(false, forKey: "LightTheme")
 			defaultSettings.setFloat(0.0, forKey: "Brightness")
             defaultSettings.setBool(false, forKey: "IsFirstLaunch")
-		}
+            		}
 		
 		if defaultSettings.boolForKey("LightTheme") {
 			ClockLabel.textColor = UIColor.blackColor()
@@ -49,6 +49,8 @@ public class ClockViewController: UIViewController {
 		}
 		
 		super.viewDidLoad()
+        
+
 		
 		dateFormatter.timeStyle = .ShortStyle // Defines time display
 		

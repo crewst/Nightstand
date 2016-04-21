@@ -46,8 +46,13 @@
 		511A10C71C901653004DCA52 /* img29.png in Resources */ = {isa = PBXBuildFile; fileRef = 511A10A91C901653004DCA52 /* img29.png */; };
 		511A10C91C908C2D004DCA52 /* AlarmSetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A10C81C908C2D004DCA52 /* AlarmSetupController.swift */; };
 		5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */; };
+		514FFAC01CA466EA004DFEFC /* AlarmOptionsTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514FFABF1CA466EA004DFEFC /* AlarmOptionsTables.swift */; };
 		517770681C90C237006FE9C3 /* AlarmInitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517770671C90C237006FE9C3 /* AlarmInitController.swift */; };
 		5177BD5C1C7CF58C0079684A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */; };
+		51C303EC1CC9568200D4B14C /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C303EB1CC9568200D4B14C /* check.png */; };
+		51C303EE1CC95C8100D4B14C /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C303ED1CC95C8100D4B14C /* SetupView.swift */; };
+		51C303F01CC95D7300D4B14C /* SetupNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C303EF1CC95D7300D4B14C /* SetupNavController.swift */; };
+		51CDAFA91CC94FA300C5267F /* Finish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CDAFA81CC94FA300C5267F /* Finish.swift */; };
 		51D7AA631C8773C30045F9D7 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51D7AA621C8773C30045F9D7 /* CurrentWeather.plist */; };
 		51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA97681C6AC7A6007205BD /* AppDelegate.swift */; };
 		51FA976B1C6AC7A6007205BD /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA976A1C6AC7A6007205BD /* ClockViewController.swift */; };
@@ -117,9 +122,15 @@
 		511A10A81C901653004DCA52 /* img28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img28.png; sourceTree = "<group>"; };
 		511A10A91C901653004DCA52 /* img29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img29.png; sourceTree = "<group>"; };
 		511A10C81C908C2D004DCA52 /* AlarmSetupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSetupController.swift; sourceTree = "<group>"; };
+		5122D6591CB6B47900D561EA /* Nightstand.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Nightstand.entitlements; sourceTree = "<group>"; };
 		5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableView.swift; sourceTree = "<group>"; };
+		514FFABF1CA466EA004DFEFC /* AlarmOptionsTables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmOptionsTables.swift; sourceTree = "<group>"; };
 		517770671C90C237006FE9C3 /* AlarmInitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInitController.swift; sourceTree = "<group>"; };
 		5177BD5B1C7CF58C0079684A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		51C303EB1CC9568200D4B14C /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		51C303ED1CC95C8100D4B14C /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		51C303EF1CC95D7300D4B14C /* SetupNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupNavController.swift; sourceTree = "<group>"; };
+		51CDAFA81CC94FA300C5267F /* Finish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finish.swift; sourceTree = "<group>"; };
 		51D7AA621C8773C30045F9D7 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
 		51FA97651C6AC7A6007205BD /* Nightstand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightstand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA97681C6AC7A6007205BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Nightstand/AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				5104CD201C909F2200C7CC07 /* alarm.png */,
+				51C303EB1CC9568200D4B14C /* check.png */,
 				510FE0461C90C73200682D10 /* moon.png */,
 			);
 			name = Icons;
@@ -176,9 +188,14 @@
 		511A104A1C900B07004DCA52 /* Setup */ = {
 			isa = PBXGroup;
 			children = (
+				51C303EF1CC95D7300D4B14C /* SetupNavController.swift */,
+				51C303ED1CC95C8100D4B14C /* SetupView.swift */,
+				51CDAFA81CC94FA300C5267F /* Finish.swift */,
+				511A104B1C900B46004DCA52 /* LocationAnimation */,
+				5104CD1D1C909EEB00C7CC07 /* Icons */,
+				514FFABF1CA466EA004DFEFC /* AlarmOptionsTables.swift */,
 				510FE04A1C910D0A00682D10 /* RepeatDaysController.swift */,
 				517770671C90C237006FE9C3 /* AlarmInitController.swift */,
-				5104CD1D1C909EEB00C7CC07 /* Icons */,
 				511A10C81C908C2D004DCA52 /* AlarmSetupController.swift */,
 				51FA97711C6AC7A6007205BD /* LaunchScreen.storyboard */,
 				51FA97681C6AC7A6007205BD /* AppDelegate.swift */,
@@ -229,7 +246,6 @@
 		51FA975C1C6AC7A6007205BD = {
 			isa = PBXGroup;
 			children = (
-				511A104B1C900B46004DCA52 /* LocationAnimation */,
 				511A104A1C900B07004DCA52 /* Setup */,
 				51FA97671C6AC7A6007205BD /* Nightstand */,
 				51FA977C1C6AC7A6007205BD /* NightstandTests */,
@@ -251,6 +267,7 @@
 		51FA97671C6AC7A6007205BD /* Nightstand */ = {
 			isa = PBXGroup;
 			children = (
+				5122D6591CB6B47900D561EA /* Nightstand.entitlements */,
 				51FFC8BB1C87DAED001C0529 /* ForecastService.swift */,
 				51FFC8B91C87D729001C0529 /* NetworkOperation.swift */,
 				5124D13D1C75ABEE00DA5AD7 /* SettingsTableView.swift */,
@@ -352,10 +369,15 @@
 				TargetAttributes = {
 					51FA97641C6AC7A6007205BD = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 7YEY64R54C;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
 							};
 						};
 					};
@@ -404,6 +426,7 @@
 				511A10B21C901653004DCA52 /* img8.png in Resources */,
 				511A10C61C901653004DCA52 /* img28.png in Resources */,
 				511A10B01C901653004DCA52 /* img6.png in Resources */,
+				51C303EC1CC9568200D4B14C /* check.png in Resources */,
 				511A10B91C901653004DCA52 /* img15.png in Resources */,
 				511A10BD1C901653004DCA52 /* img19.png in Resources */,
 				511A10AD1C901653004DCA52 /* img3.png in Resources */,
@@ -458,8 +481,10 @@
 				51FA976B1C6AC7A6007205BD /* ClockViewController.swift in Sources */,
 				5177BD5C1C7CF58C0079684A /* WeatherViewController.swift in Sources */,
 				51FA97691C6AC7A6007205BD /* AppDelegate.swift in Sources */,
+				514FFAC01CA466EA004DFEFC /* AlarmOptionsTables.swift in Sources */,
 				511A10491C8FCDD0004DCA52 /* UseLocationViewController.swift in Sources */,
 				51FFC8BE1C87E206001C0529 /* CurrentWeather.swift in Sources */,
+				51C303EE1CC95C8100D4B14C /* SetupView.swift in Sources */,
 				51FFC8BA1C87D729001C0529 /* NetworkOperation.swift in Sources */,
 				51FFC8BC1C87DAED001C0529 /* ForecastService.swift in Sources */,
 				511A10471C8E0D96004DCA52 /* SetupController.swift in Sources */,
@@ -468,6 +493,8 @@
 				517770681C90C237006FE9C3 /* AlarmInitController.swift in Sources */,
 				511A10C91C908C2D004DCA52 /* AlarmSetupController.swift in Sources */,
 				5124D13E1C75ABEE00DA5AD7 /* SettingsTableView.swift in Sources */,
+				51C303F01CC95D7300D4B14C /* SetupNavController.swift in Sources */,
+				51CDAFA91CC94FA300C5267F /* Finish.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,13 +638,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				Brightness = 0.0;
+				CODE_SIGN_ENTITLEMENTS = Nightstand/Nightstand.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Nightstand/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COMSC3133.Nightstand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "245cfdf4-56ae-4382-9aaa-aa5abe514e72";
 			};
 			name = Debug;
 		};
@@ -626,13 +654,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				Brightness = "";
+				CODE_SIGN_ENTITLEMENTS = Nightstand/Nightstand.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Nightstand/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COMSC3133.Nightstand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "245cfdf4-56ae-4382-9aaa-aa5abe514e72";
 			};
 			name = Release;
 		};

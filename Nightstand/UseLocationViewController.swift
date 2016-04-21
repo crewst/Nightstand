@@ -35,6 +35,9 @@ class UseLocationViewController: UIViewController, CLLocationManagerDelegate {
             
         }
         
+        let AlarmInitControllerObject = self.storyboard?.instantiateViewControllerWithIdentifier("AlarmInitController") as? AlarmInitController
+        self.navigationController?.pushViewController(AlarmInitControllerObject!, animated: true)
+        
         if CLLocationManager.authorizationStatus() == (CLAuthorizationStatus.Denied) {
             locationDenied()
         }
@@ -137,8 +140,7 @@ class UseLocationViewController: UIViewController, CLLocationManagerDelegate {
         bottomLabel.hidden = true
     }
     func locationAllowed() {
-        let AlarmInitControllerObject = self.storyboard?.instantiateViewControllerWithIdentifier("AlarmInitController") as? AlarmInitController
-        self.navigationController?.pushViewController(AlarmInitControllerObject!, animated: true)
+        
     }
     @IBAction func skipAction(sender: AnyObject) {
         let alert = UIAlertController(title: "Are You Sure?", message: warningString, preferredStyle: UIAlertControllerStyle.Alert)

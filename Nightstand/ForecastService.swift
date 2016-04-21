@@ -1,5 +1,5 @@
 //
-//  NetworkOperation.swift
+//  ForecastService.swift
 //  Nightstand
 //
 //  Created by Tommy Crews on 3/2/16.
@@ -43,3 +43,6 @@ struct ForecastService {
     }
     
 }
+
+// SDG
+
